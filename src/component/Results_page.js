@@ -66,7 +66,7 @@ function Results_page() {
     }
     var result = {}
 
-    if (id == 9204776 ||id ===  '200500201250'){
+    if (id === 9204776 ||id ===  '200500201250'){
       info = { Index: "9204776",Name: "Prasannah",  Examination: exam, Year: year, result: [
     {"subject": "Mathematics", "marks": "A"},
     {"subject": "Science", "marks": "A"},
