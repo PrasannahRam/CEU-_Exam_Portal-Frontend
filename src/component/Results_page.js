@@ -66,8 +66,19 @@ function Results_page() {
     }
     var result = {}
 
-    if (id === 9204776 ||id ===  '200500201250'){
-      setresult_info({ Indexno: "9204776",Name: "Prasannah", Nic: "2005123456789", Exam: exam, Year: year, result:{'Mathematics':"A", 'Science':"A", 'English':"A", 'Tamil Language':"A", 'Religion':"A", 'History':"A", 'Bascket 1':"A", 'Bascket 2':"A", 'Bascket 3':"A"} })
+    if (id == 9204776 ||id ===  '200500201250'){
+      info = { Index: "9204776",Name: "Prasannah",  Examination: exam, Year: year, result: [
+    {"subject": "Mathematics", "marks": "A"},
+    {"subject": "Science", "marks": "A"},
+    {"subject": "English", "marks": "A"},
+    {"subject": "Tamil Language", "marks": "A"},
+    {"subject": "Religion", "marks": "A"},
+    {"subject": "History", "marks": "A"},
+    {"subject": "Bascket 1", "marks": "A"},
+    {"subject": "Bascket 2", "marks": "A"},
+    {"subject": "Bascket 3", "marks": "A"}
+]  }
+      setresult_info(info)
       setshow(true)
       return
     }
